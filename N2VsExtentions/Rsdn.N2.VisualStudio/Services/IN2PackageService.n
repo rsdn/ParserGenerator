@@ -1,0 +1,33 @@
+﻿using Nemerle;
+using Nemerle.Collections;
+using Nemerle.Text;
+using Nemerle.Utility;
+
+using System;
+using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using System.Linq;
+
+using System.Windows;
+using System.Windows.Controls;
+
+namespace Rsdn.N2.VisualStudio
+{
+  /// <summary>
+  /// Description of IN2PackageService.
+  /// </summary>
+  [ Guid ( "5E76C80F-07ED-42F3-9A7F-42B757776861" ) ]
+  public interface IN2PackageService
+  {
+    Themes : ResourceDictionary
+    {
+      get;
+    }
+  }
+  
+  [ Guid ( "D29F73E6-C397-46E6-A9F3-7DFB5C465E49" ) ]
+  public interface SN2PackageService
+  {
+
+  }
+}

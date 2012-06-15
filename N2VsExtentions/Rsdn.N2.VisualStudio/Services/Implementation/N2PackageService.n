@@ -1,0 +1,27 @@
+﻿using Nemerle;
+using Nemerle.Collections;
+using Nemerle.Text;
+using Nemerle.Utility;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+using System.Windows;
+
+namespace Rsdn.N2.VisualStudio
+{
+  /// <summary>
+  /// Description of N2PackageService.
+  /// </summary>
+  public class N2PackageService : IN2PackageService, SN2PackageService
+  {
+    // Cache UI resources used in tool windows
+    private mutable themes : ResourceDictionary;
+    
+    public Themes : ResourceDictionary
+    {
+      get {  if ( themes == null ) { themes = Rsdn.N2.VisualStudio.Themes.Generic ( ); themes } else themes }
+    }
+  }
+}

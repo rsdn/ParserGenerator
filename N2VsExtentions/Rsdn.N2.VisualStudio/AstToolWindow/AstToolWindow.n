@@ -21,7 +21,11 @@ namespace Rsdn.N2.VisualStudio
     public this ( )
     {
       base ( null );
-      this.Caption = "Document structure";
+      
+      def serviceProvider = this.GetService ( typeof ( SVsServiceProvider ) ) :> IServiceProvider;
+      def serv = serviceProvider?.GetService ( typeof ( SN2PackageService ) );
+      
+      this.Caption = serv?.ToString ( );
       this.Content = TextBlock() <- { Text = "Here will ast for the current document"; FontSize = 18; };
     }
   }

@@ -17,6 +17,7 @@
   <References />
   <Content>
     <MefComponent>|%CurrentProject%|</MefComponent>
+    <MefComponent>|Rsdn.N2.VisualStudio.Themes|</MefComponent>
     <VsPackage>|%CurrentProject%;PkgdefProjectOutputGroup|</VsPackage>
     <ProjectTemplate>ProjectTemplates\N2</ProjectTemplate>
     <ItemTemplate>ItemTemplates\N2</ItemTemplate>

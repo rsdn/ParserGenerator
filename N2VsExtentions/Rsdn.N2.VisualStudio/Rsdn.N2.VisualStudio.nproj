@@ -212,11 +212,19 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.n" />
+    <Compile Include="Services\Implementation\N2PackageService.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\IN2PackageService.n">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AstToolWindow" />
+    <Folder Include="Services" />
     <Folder Include="Properties\" />
     <Folder Include="Resources\" />
+    <Folder Include="Services\Implementation" />
   </ItemGroup>
   <ItemGroup>
     <None Include="source.extension.vsixmanifest">
@@ -250,6 +258,13 @@
     <Content Include="Key.snk">
       <SubType>Content</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rsdn.N2.VisualStudio.Themes\Rsdn.N2.VisualStudio.Themes.csproj">
+      <Name>Rsdn.N2.VisualStudio.Themes</Name>
+      <Project>{2a6d2770-aef7-4b56-96e3-0d49d0ba4d87}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(Nemerle)\Nemerle.MSBuild.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\VSSDK\Microsoft.VsSDK.targets" />
